@@ -23,14 +23,14 @@ void Binary(int arr[],int size)
    int l,r,mid,key;
    l=0;
    r=size;
-   cout<<"Enter Element To Search :";
+   cout<<"Enter Element To Search : ";
    cin>>key;
    while(l<=r)
    {
        mid=(r+l)/2;
        if(arr[mid]==key)
        {
-           cout<<"Element Found at Position "<<mid+1;
+           cout<<"Element Found at Position : "<<mid+1;
            break;
        }
        else if(arr[mid]<key)
@@ -50,13 +50,13 @@ void Binary(int arr[],int size)
 void Linear(int arr[],int size)
 {
     int count=0,i,key;
-    cout<<"Enter Element To Search :";
+    cout<<"Enter Element To Search : ";
    cin>>key;
    for( i=0;i<size;i++)
    {
        if(arr[i]==key)
        {
-           cout<<"Element Found At Position :"<<i+1;
+           cout<<"Element Found At Position : "<<i+1;
            count=1;
            break;
        }
@@ -69,14 +69,15 @@ void Linear(int arr[],int size)
 int main()
 {
     int arr[100],size,ch;
-    cout<<"Enter Size of Array :";
+    cout<<"Enter Size of Array : ";
     cin>>size;
-    cout<<"Enter Array : \n";
+    cout<<"Enter Array : "<<endl;
     for(int i=0;i<size;i++)
     {
         cin>>arr[i];
     }
-    cout<<"Enter Choice \n1 : Linear Search\n2 : Binary Search \n ";
+    cout<<"Choice : \n1 : Linear Search\n2 : Binary Search \n";
+    cout<<"Enter Choice :";
     cin>>ch;
     if(ch==1)
     {
@@ -93,3 +94,4 @@ int main()
 
     return 0;
 }
+
